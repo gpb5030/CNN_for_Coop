@@ -1,6 +1,12 @@
 This program implements two different CNN models on the MNIST and CIFAR10 
 datasets. The program is implemented on pytorch. The CNN models achieves 
-above 99% accuracy on MNIST and ~65% on CIFAR10 respectively.  
+above 99% accuracy on MNIST and ~65% on CIFAR10 respectively. Each time the 
+program is run it trains the models and tests the models for accuracy every
+two epochs and at the end.
+
+Usage: To use this program takes no arguments. The program will prompt you the
+use on if you want to train the MNIST model or the CIFAR10 model. Then it will
+prompt you on how many epochs you want to train the model for. 
 
 MINST CNN: The MINST dataset contains images that are 28x28 pixels.The first
 convolution layer uses a 3x3 kernel with 10 out channels. Then a 2x2 max 
@@ -21,4 +27,4 @@ fed through 3 fully connected layers. The dropout rate is 0.15 on all the
 NN layers which helped to prevent overfitting. A lower learning rate of
 0.002 was best for this model although it led to slower convergence. 
 Similar to the MINST model, this model also has a decaying learning rate. The
-best performance achieve for this model was 65 
+best performance achieve for this model was 67.87% 
